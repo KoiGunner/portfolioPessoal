@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+}
+
+
+
+/* navigation bar upset */
+
+:root {
+    --color-navigation: #2e2e2e;
+    --left-color: green;
+    --middle-color: coral;
+    --footer-color: #2e2e2e;
+    --body-color: yellow;
+    --right-color: #e7dd96;
+    --color-background: skyblue;
+}
+
+.navigation-bar{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-navigation);
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.left-side{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.middle-side{
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.social-media {
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 5%;
+    
+
+}
+
+.languages {
+    height: 50px;
+    width: 150px;
+    display: flex;
+    gap: 10px;
+}
+
+.welcome {
+    height: 400px;
+    width: 100%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
+a{
+    color: white;
+}
+
+.fraseGiovanna {
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+
+p {
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+}
+
+.article-part {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 400px;
+    padding-top: 45px;
+}
+
+.web-image {
+    height: 400px;
+    width: 450px;
+    background-color: red;
+    float: right;
+}
+/* 
+    Corpo do site
+*/
+
+.left-part {
+    background-color: var(--color-background);
+    height: 300px;
+    width: 15%;
+    border-radius: 5px;
+    overflow: auto;
+    padding: 5px;
+}
+
+.right-part {
+    
+    background-color: var(--color-background);
+    height: 300px;
+    width: 15%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.middle-part{
+    background-color: var(--color-background);
+    height: 300px;
+    width: 15%;
+    border-radius: 5px;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+/* 
+    Rodapé e afins
+*/
+
+footer {
+    width: 100%;
+    height: 250px;
+    background-color: var(--footer-color);
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Editando os inputs */
+
+
+textarea {
+    width: 300px;
+    height: 150px;
+    resize: none;
+    padding: 10px;
+}
+
+.botaoGiovanna {
+    margin-top: 50px;
+    height: 50px;
+    width: 190px;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botaoDocePaladar {
+    margin-top: 50px;
+    height: 50px;
+    width: 190px;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+}
+
+input[type="submit"] {
+    width: 100px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+input[type=email]{
+    width: 300px;
+    padding: 10px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+}
+
+
+/*Design Responsivo */
+
+@media screen and (max-width: 760px) {
+    .article-part {
+        display: inline-block;
+        width: 100%;
+        height: 645px;
+    }
+    
+    .left-part{
+        width: 100%;
+        height: 200px;
+
+
+    }
+    .middle-part{
+        width: 100%;
+        height: 200px;
+    }
+    .right-part{
+        width: 100%;
+        height: 200px;
+    }
+    
+}
