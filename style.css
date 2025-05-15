@@ -17,7 +17,7 @@
     background-color: aqua;
     height: 100px;
     display: flex;
-    gap: 10%;
+    gap: 5%;
     padding-top: 30px;
     padding-left: 5%;
     padding-right: 5%;
@@ -49,6 +49,21 @@
     padding-right: 5%;
 }
 
+.nacionality {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    padding-right: 5%;
+    gap: 10px;
+}
+
+.icone_bandeira {
+    height: 50px;
+    width: 50px;
+    border: none;
+    gap: 1px;
+}
+
 .parte1 {
     padding-top: 10%;
     padding-left: 5%;
@@ -66,11 +81,17 @@
     height: auto;
     display: flex;
     gap: 10%;
+    padding-top: 2%;
 }
 
-.divisao {
-    width: 25%;
-    height: auto;
+.fraseProject {
+    padding-top: 2%;
+}
+
+img {
+    border: 1px solid black;
+    max-width: 200px;
+    max-height: 120px;
 }
 
 .photoExample{
@@ -143,7 +164,7 @@
 footer {
     width: 100%;
     height: 150px;
-    background-color: gray;
+    background-color: aqua;
 }
 
 .socialMedia{
@@ -165,6 +186,12 @@ hr {
     color: black;
     gap: 10%;
     font-size: 250%;
+}
+
+.telefone:hover, 
+.github:hover, 
+.linkedin:hover {
+    color: gray;
 }
 
 
