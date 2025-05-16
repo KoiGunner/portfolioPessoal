@@ -1,0 +1,49 @@
+:root {
+    --first-color: silver;
+    --second-color: blue;
+    --third-color: aqua;
+    --fourth-color: red;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+header {
+    background-color: aqua;
+    height: 150px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    gap: 5%;
+    padding-top: 2%;
+}
+
+.navigation-links{
+    display: flex;
+    list-style: none;
+    width: auto;
+    height: auto;
+    gap: 5%;
+    
+}
+
+.navigation-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation-links a:hover {
+    color: gray;
+}
+
+
+.icone_bandeira {
+    width: 50px;
+    height: 50px;
+}
