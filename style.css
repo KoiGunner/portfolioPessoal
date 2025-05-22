@@ -1,0 +1,147 @@
+:root {
+    --main-color: #7FFFD4;
+    --first-color: silver;
+    --second-color: blue;
+    --third-color: #A9A9A9;
+    --fourth-color: red;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    font-weight: normal;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+header {
+    height: 150px;
+    width: 100%;
+}
+
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 5% 5% 0 5%;
+    gap: 2%;
+}
+
+
+.navigation-links{
+    display: flex;
+    list-style: none;
+    gap: 10%;
+    padding-left: 10%;
+}
+
+.navigation-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation-links a:hover {
+    color: gray;
+}
+
+.language-links{
+    display: flex;
+    padding: 0 5%;
+    justify-content: flex-end;
+    gap: 15%;
+}
+
+
+.icone_bandeira {
+    width: 50px;
+    height: 50px;
+}
+
+/*
+
+Container e afins
+
+*/
+
+main {
+    padding: 5% 5% 5% 5%;
+}
+
+.first {
+    width: auto;
+    height: auto;
+}
+
+.introduction {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid black;
+    gap: 5%;
+}
+
+.first-text{
+    display: grid;
+}
+
+.first-image {
+    display: grid;
+}
+
+
+.my-projects {
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.works {
+    width: 350px;
+    border: 1px solid black; 
+}
+
+.fraseProject{
+    text-align: justify;
+    margin: 20px 5px 0px 5px;
+}
+
+.imagem {
+    width: 280px; 
+    height: 150px;
+    border: 1px solid black;
+
+}
+
+
+/**
+
+Rodapé
+
+*/
+
+footer {
+    height: 300px;
+}
+
+.final {
+    width: 100%;
+    height: auto;
+}
+
+.social-media{
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    justify-items: end;
+}
+
+.linkedin,
+.github,
+.telefone {
+    font-size: 30px;
+    color: black;
+
+}
