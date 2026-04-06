@@ -1,154 +1,137 @@
-:root {
-    --main-color: #7FFFD4;
-    --first-color: silver;
-    --second-color: blue;
-    --third-color: #A9A9A9;
-    --fourth-color: red;
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica;
-    font-weight: normal;
-}
-
-body {
-    background-color: var(--main-color);
-}
-
-header {
-    height: 150px;
-    width: 100%;
-}
-
-
-nav {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    padding: 5% 5% 0 5%;
-    gap: 2%;
-}
-
-
-.navigation-links{
-    display: flex;
-    list-style: none;
-    gap: 10%;
-    padding-left: 10%;
-}
-
-.navigation-links a {
     text-decoration: none;
+    font-family: sans-serif;
+    background-color: whitesmoke;
+}
+
+
+/*
+
+Estilização das figuras abaixo
+
+*/
+
+i { 
     color: black;
-}
-
-.navigation-links a:hover {
-    color: gray;
-}
-
-.language-links{
-    display: flex;
-    padding: 0 5%;
-    justify-content: flex-end;
-    gap: 15%;
-}
-
-
-.icone_bandeira {
-    width: 50px;
-    height: 50px;
 }
 
 /*
 
-Container e afins
+    Estilização da barra de navegação
 
 */
 
-main {
-    padding: 5% 5% 5% 5%;
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
 }
 
-.first {
-    width: auto;
-    height: auto;
+.left-div {
 }
 
-.introduction {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border: 1px solid black;
-    gap: 5%;
+.right-div {
+
 }
 
-.first-text{
-    display: grid;
+/*
+    Estilização abaixo do corpo da página
+*/
+
+
+article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem 3rem;
 }
 
-.first-image {
-    display: grid;
+.parte1 {
+    width: 50%;
+    height: 480px;
+    padding: 2rem;
+
 }
 
-
-.my-projects {
-    padding-top: 10%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.works {
+.image-area { 
+    background-color: red;
     width: 350px;
-    border: 1px solid black; 
+    height: 350px;
+    border-radius: 100%;
+    float: right;
 }
 
-.fraseProject{
-    text-align: justify;
-    margin: 20px 5px 0px 5px;
+.parte2 {
+    height: 480px;
+    width: 50%;
+    padding: 2rem;
 }
 
-.imagem {
-    width: 347px; 
-    height: 180px;
+.text-area {
+    padding: 1rem 3rem;
+    max-width: 600px;
+}
+
+.title {
+    font-size: 50px;
+    padding-bottom: 2rem;
+}
+
+.links-area {
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.curriculo, .projetos, .contato{
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    border-radius: 5px;
     border: 1px solid black;
-
 }
-
-
-/**
-
-Rodapé
-
-*/
 
 footer {
-    height: 100px;
-    width: 100%;
-    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
 }
 
-.test-size {
-    width: 100%;
-    height: 100px;
-}
+/*
+    Estilização do media query para telas menores que 768px
+*/
 
-.social-media{
-    width: 100%;
-    display: flex; 
-    justify-content: center;
-    background-color: gray;
-    gap: 10px;
-}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-.final-message {
-    padding-top: 2%;
-    text-align: center;
-}
+    .left-div, .right-div {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
 
-.linkedin,
-.github,
-.telefone {
-    font-size: 30px;
-    color: black;
+    article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .parte1, .parte2 {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .image-area {
+        margin-bottom: 1rem;
+    }
 }
